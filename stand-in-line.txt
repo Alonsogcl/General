@@ -1,0 +1,14 @@
+function nextInLine(arr, item) {
+  // Your code here
+ item = arr.push(item);  //Agrega un valor al final del arreglo
+ let remove=arr.shift();  //Remueve el primero del arreglo y lo devuelve y guarda en remove
+  return remove;  // Change this line
+}
+
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 1)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
